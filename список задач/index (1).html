@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание #1</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+
+    <h1>Задание 1</h1>
+    <div id="root">
+        <div id="container">
+
+            <button onclick="TodoL()">Загрузить список</button>
+            <button style="margin-bottom: 10px;" onclick="$('table tbody').children().remove(); alert('Таблица очищена!')">Очистить список</button>
+            
+        </div>
+        <table cellspacing="2" border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Пользователь</th>
+                    <th>Задача</th>
+                    <th>Выполнено</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+    </div>
+
+    <script src="./todoList.js"></script>
+    
+</html>
